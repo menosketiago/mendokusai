@@ -11,15 +11,6 @@
     border-radius: $border-radius-default;
     box-shadow: $menu-shadow;
 
-    hr {
-        margin: 0;
-        margin-top: $space-small;
-        padding: 0;
-        padding-bottom: $space-small;
-        border: 0;
-        border-top: 1px solid $menu-divider-color;
-    }
-
     .Item {
         display: flex;
         align-items: center;

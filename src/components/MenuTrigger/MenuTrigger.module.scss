@@ -1,0 +1,11 @@
+@import 'src/styles/variables.scss';
+@import 'src/styles/mixins.scss';
+
+.MenuTrigger {
+    svg {
+        &:hover {
+            background-color: $hover-bg-color;
+            border-radius: 50%;
+        }
+    }
+}

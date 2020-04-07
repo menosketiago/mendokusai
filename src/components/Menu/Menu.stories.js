@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions';
 
 import Menu from './Menu';
 import MenuItem from './MenuItem';
-import MenuDivider from './MenuDivider';
+import Separator from '../Separator/Separator';
 
 export default {
 	component: Menu,
@@ -23,10 +23,10 @@ export const groups = () =>
 		<MenuItem iconName='FiPlay' label='Present' />
 		<MenuItem iconName='FiSmartphone' label='Open Mentimote' />
 		<MenuItem iconName='FiDownload' label='Export results' />
-		<MenuDivider />
+		<Separator />
 		<MenuItem iconName='FiUsers' label='Share with organization' />
 		<MenuItem iconName='FiShare' label='Share voting link' />
-		<MenuDivider />
+		<Separator />
 		<MenuItem iconName='FiEdit2' label='Rename' />
 		<MenuItem iconName='FiFolder' label='Move to folder' />
 		<MenuItem iconName='FiCopy' label='Duplicate' />
