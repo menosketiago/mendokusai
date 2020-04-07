@@ -1,0 +1,15 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'typography.scss';
+
+// BASIC RESETS
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
