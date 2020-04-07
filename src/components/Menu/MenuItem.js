@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Menu.module.scss';
 
+import Icon from '../Icon/Icon';
+
 class MenuItem extends React.Component {
     constructor(props) {
         super(props);
@@ -14,12 +16,13 @@ class MenuItem extends React.Component {
 
     render() {
         const {
-            // iconName,
+            iconName,
             label
         } = this.props;
 
         return (
             <li className={styles.Item} onClick={this.handleClick}>
+                <Icon iconName={iconName} />
                 {label}
             </li>
         )

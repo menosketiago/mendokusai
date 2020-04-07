@@ -5,27 +5,32 @@ $black: #000000;
 
 $text-color: #464646;
 
+$hover-bg-color: mix($white, $black, 96%);
+
 // TYPOGRAPHY
 
 $default-font: 'Roboto', sans-serif;
 
-// SIZES
+// SPACES
 
-$size-base: 4px;
-$size-small: $size-base * 2;
-$size-related: $size-base * 3;
-$size-large: $size-base * 6;
+$space-base: 4px;
+$space-small: $space-base * 2;
+$space-related: $space-base * 3;
+$space-large: $space-base * 6;
 
 // OTHERS
 
-$border-radius-default: $size-base;
+$border-radius-default: $space-base;
 
 // COMPONENTS
 
 // Menu
+$menu-divider-color: mix($white, $black, 90%);
+
 $menu-width: 250px;
 $menu-shadow:
     0 2px 8px -4px rgba($black, .1),
     0 4px 8px 0 rgba($black, .1),
     0 0 12px 0 rgba($black, .05)
 ;
+$menu-icon-size: 16px;

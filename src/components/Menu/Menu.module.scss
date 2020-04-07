@@ -3,6 +3,7 @@
 
 .Menu {
     display: block;
+    overflow: hidden;
     width: $menu-width;
     margin: 0;
     padding: 0;
@@ -10,7 +11,33 @@
     border-radius: $border-radius-default;
     box-shadow: $menu-shadow;
 
+    hr {
+        margin: 0;
+        margin-top: $space-small;
+        padding: 0;
+        padding-bottom: $space-small;
+        border: 0;
+        border-top: 1px solid $menu-divider-color;
+    }
+
     .Item {
-        padding: $size-small;
+        display: flex;
+        align-items: center;
+        padding: $space-related;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $hover-bg-color;
+        }
+
+        svg {
+            width: $menu-icon-size;
+            height: $menu-icon-size;
+            margin-right: $space-related;
+
+            > * {
+                pointer-events: none;
+            }
+        }
     }
 }

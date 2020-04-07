@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './Menu.module.scss';
 
-import MenuItem from './MenuItem';
-
 class Menu extends React.Component {
     constructor() {
         super();
@@ -14,10 +12,8 @@ class Menu extends React.Component {
 
     render() {
         return (
-            <ul className={ styles.Menu }>
-                <MenuItem label='Share' />
-                <MenuItem label='Edit' />
-                <MenuItem label='Delete' />
+            <ul className={styles.Menu}>
+                {this.props.children}
             </ul>
         )
     }
