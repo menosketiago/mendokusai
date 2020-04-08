@@ -11,7 +11,7 @@ export default {
 };
 
 export const basic = () =>
-	<Menu>
+	<Menu openState='true'>
 		<MenuItem iconName='FiShare2' label='Share' />
 		<MenuItem iconName='FiEdit2' label='Edit' />
 		<MenuItem iconName='FiTrash2' label='Delete' />
@@ -19,7 +19,7 @@ export const basic = () =>
 ;
 
 export const groups = () =>
-	<Menu>
+	<Menu openState='true'>
 		<MenuItem iconName='FiPlay' label='Present' />
 		<MenuItem iconName='FiSmartphone' label='Open Mentimote' />
 		<MenuItem iconName='FiDownload' label='Export results' />

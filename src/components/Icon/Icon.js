@@ -1,4 +1,5 @@
 import React from 'react';
+
 import * as ReactIcon from "react-icons/fi";
 
 class Icon extends React.Component {

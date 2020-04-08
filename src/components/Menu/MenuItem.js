@@ -1,19 +1,9 @@
 import React from 'react';
-import styles from './Menu.module.scss';
 
+import styles from './Menu.module.scss';
 import Icon from '../Icon/Icon';
 
 class MenuItem extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    handleClick() {
-        console.log('Item clicked');
-    }
-
     render() {
         const {
             iconName,
@@ -21,7 +11,7 @@ class MenuItem extends React.Component {
         } = this.props;
 
         return (
-            <li className={styles.Item} onClick={this.handleClick}>
+            <li className={styles.Item}>
                 <Icon iconName={iconName} />
                 {label}
             </li>

@@ -3,15 +3,19 @@
 $white: #ffffff;
 $black: #000000;
 
+// This would likely be a a CSS root variable for theming
+$primary-color: #4293F0;
 $text-color: #464646;
 
 $hover-bg-color: mix($white, $black, 96%);
+$focus-color: rgba(66, 147, 240, 0.4);
 
 // TYPOGRAPHY
 
 $default-font: 'Roboto', sans-serif;
 
-// SPACES
+// SPACE VARIABLES
+// Used for margins and paddings to keep the whitespace consistent
 
 $space-base: 4px;
 $space-small: $space-base * 2;
@@ -20,11 +24,23 @@ $space-large: $space-base * 6;
 
 // OTHERS
 
+$element-default-height: $space-large;
+
 $border-radius-default: $space-base;
+$focus-shadow: 0 0 0 3px $focus-color;
 
-// COMPONENTS
+$speed-default: .2s;
 
-// Menu
+// COMPONENTS //
+
+// ICONS
+
+$icon-size-base: 16px;
+
+// MENU
+
+$menu-trigger-size: $element-default-height;
+
 $menu-divider-color: mix($white, $black, 90%);
 
 $menu-width: 250px;
@@ -33,4 +49,4 @@ $menu-shadow:
     0 4px 8px 0 rgba($black, .1),
     0 0 12px 0 rgba($black, .05)
 ;
-$menu-icon-size: 16px;
+$menu-icon-size: $icon-size-base;
