@@ -16,12 +16,18 @@ class Menu extends React.Component {
     }
 
     render() {
+        const {
+            styleProps
+        } = this.props;
+
         return (
             <ul className={
-                this.state.isOpen ?
-                `${styles.Menu} ${styles.isOpen}` :
-                styles.Menu
-            }>
+                    this.state.isOpen ?
+                    `${styles.Menu} ${styles.isOpen}` :
+                    styles.Menu
+                }
+                style={styleProps}
+            >
                 {this.props.children}
             </ul>
         )

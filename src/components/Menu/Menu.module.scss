@@ -2,6 +2,7 @@
 @import 'src/styles/mixins.scss';
 
 .Menu {
+    position: absolute;
     overflow: hidden;
     width: $menu-width;
     margin: 0;
