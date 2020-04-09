@@ -22,7 +22,10 @@ class Button extends React.Component {
 
         if (iconOnly) {
             return (
-                <button className={styles.Icon} onClick={this.handleClick}>
+                <button
+                    className={styles.Icon}
+                    onClick={(this.handleClick)}
+                >
                     <Icon iconName={iconName}></Icon>
                 </button>
             )
