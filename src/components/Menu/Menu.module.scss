@@ -28,14 +28,16 @@
             background-color: $hover-bg-color;
         }
 
+        &:focus {
+            background-color: $focus-bg-color;
+            outline: 0;
+        }
+
         svg {
             width: $menu-icon-size;
             height: $menu-icon-size;
             margin-right: $space-related;
-
-            > * {
-                pointer-events: none;
-            }
+            pointer-events: none;
         }
     }
 

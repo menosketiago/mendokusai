@@ -10,6 +10,8 @@ $text-color: #464646;
 $hover-bg-color: mix($white, $black, 96%);
 $focus-color: rgba(66, 147, 240, 0.4);
 
+$focus-bg-color: mix($white, $focus-color, 60%);
+
 // TYPOGRAPHY
 
 $default-font: 'Roboto', sans-serif;

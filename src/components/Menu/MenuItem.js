@@ -11,7 +11,7 @@ class MenuItem extends React.Component {
         } = this.props;
 
         return (
-            <li className={styles.Item}>
+            <li className={styles.Item} tabIndex='0'>
                 <Icon iconName={iconName} />
                 {label}
             </li>

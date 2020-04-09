@@ -4,16 +4,6 @@ import styles from './Button.module.scss';
 import Icon from '../Icon/Icon';
 
 class Button extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    handleClick() {
-        this.props.onClick();
-    }
-
     render() {
         const {
             iconOnly,
@@ -22,10 +12,7 @@ class Button extends React.Component {
 
         if (iconOnly) {
             return (
-                <button
-                    className={styles.Icon}
-                    onClick={(this.handleClick)}
-                >
+                <button className={styles.Icon}>
                     <Icon iconName={iconName}></Icon>
                 </button>
             )
