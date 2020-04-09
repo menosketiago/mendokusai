@@ -11,8 +11,10 @@ yarn storybook
 
 ## Notes
 
-This is a MVP of what a component library could work like, a lot of things are missing from proper lifetime management of components and event states. 
+This is a MVP of what a component library could work like, a lot of things are missing from proper lifetime management of components and event states.
 
-But this is also my first from scratch React implementation and I clearly need to learn better the concepts behind the framework as I am much more used to vanilla JS (ES5) and direct DOM access (the design systems I have been working with needed to be JS framework agnostic so I got little need for learning React in depth).
+I tried to atomize the components into the smallest and simpler sizes possible while maintaining flexibility of use.
+
+This is my first from scratch React implementation and I clearly need to learn better the concepts behind the framework as I am much more used to vanilla JS (ES5) and direct DOM access (the design systems I have been working with needed to be JS framework agnostic so I got little need for learning React in depth).
 
 Please ask me for access to the TriOptima Design System docs where you can check my implementation of a action/dropdown menu were I actually address positioning to avoid crop on the viewport.
